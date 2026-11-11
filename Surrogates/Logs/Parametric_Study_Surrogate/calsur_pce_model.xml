@@ -1,166 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openturns-study version="102700" manager="XMLStorageManager">
-  <object class="Description" id="1708" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="592" size="2" StudyVisible="false" StudyLabel="">
     <string index="0">x0</string>
     <string index="1">x1</string>
   </object>
-  <object class="Description" id="1709" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="593" size="1" StudyVisible="false" StudyLabel="">
     <string index="0">y0</string>
   </object>
-  <object class="Point" id="1710" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1711" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1714" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="594" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="595" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="598" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1715" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1713" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1714"/>
-    <object member="recurrenceCoefficients_" id="1715"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="599" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="597" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="598"/>
+    <object member="recurrenceCoefficients_" id="599"/>
   </object>
-  <object class="Point" id="1717" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="601" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1718" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1716" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1717"/>
-    <object member="recurrenceCoefficients_" id="1718"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="602" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="600" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="601"/>
+    <object member="recurrenceCoefficients_" id="602"/>
   </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1712" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1713"/>
-    <object index="1" id="1716"/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="596" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="597"/>
+    <object index="1" id="600"/>
   </object>
-  <object class="ProductPolynomialEvaluation" id="1707" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1708"/>
-    <object member="outputDescription_" id="1709"/>
-    <object member="parameter_" id="1710"/>
-    <object member="parameterDescription_" id="1711"/>
-    <object member="polynomials_" id="1712"/>
+  <object class="ProductPolynomialEvaluation" id="591" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="592"/>
+    <object member="outputDescription_" id="593"/>
+    <object member="parameter_" id="594"/>
+    <object member="parameterDescription_" id="595"/>
+    <object member="polynomials_" id="596"/>
   </object>
-  <object class="Point" id="1720" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1721" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1713"/>
-    <object index="1" id="1716"/>
+  <object class="Point" id="604" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="605" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="597"/>
+    <object index="1" id="600"/>
   </object>
-  <object class="ProductPolynomialGradient" id="1719" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1720"/>
-    <object member="polynomials_" id="1721"/>
+  <object class="ProductPolynomialGradient" id="603" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="604"/>
+    <object member="polynomials_" id="605"/>
   </object>
-  <object class="Point" id="1723" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1724" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1713"/>
-    <object index="1" id="1716"/>
+  <object class="Point" id="607" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="608" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="597"/>
+    <object index="1" id="600"/>
   </object>
-  <object class="ProductPolynomialHessian" id="1722" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1723"/>
-    <object member="polynomials_" id="1724"/>
+  <object class="ProductPolynomialHessian" id="606" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="607"/>
+    <object member="polynomials_" id="608"/>
   </object>
-  <object class="FunctionImplementation" id="1706" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1707"/>
-    <object member="gradient_" id="1719"/>
-    <object member="hessian_" id="1722"/>
+  <object class="FunctionImplementation" id="590" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="591"/>
+    <object member="gradient_" id="603"/>
+    <object member="hessian_" id="606"/>
   </object>
-  <object class="Description" id="1727" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="611" size="2" StudyVisible="false" StudyLabel="">
     <string index="0">x0</string>
     <string index="1">x1</string>
   </object>
-  <object class="Description" id="1728" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="612" size="1" StudyVisible="false" StudyLabel="">
     <string index="0">y0</string>
   </object>
-  <object class="Point" id="1729" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1730" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1733" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="613" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="614" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="617" size="2" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">0</numericalscalar>
     <numericalscalar index="1">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1734" size="3" StudyVisible="false" StudyLabel="">
+  <object class="PersistentCollection&lt;Scalar&gt;" id="618" size="3" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
     <numericalscalar index="1">0</numericalscalar>
     <numericalscalar index="2">0</numericalscalar>
   </object>
-  <object class="OrthogonalUniVariatePolynomial" id="1732" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1733"/>
-    <object member="recurrenceCoefficients_" id="1734"/>
+  <object class="OrthogonalUniVariatePolynomial" id="616" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="617"/>
+    <object member="recurrenceCoefficients_" id="618"/>
   </object>
-  <object class="Point" id="1736" size="4" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">-0</numericalscalar>
-    <numericalscalar index="1">-1.2247448713915892</numericalscalar>
-    <numericalscalar index="2">0</numericalscalar>
-    <numericalscalar index="3">0.40824829046386302</numericalscalar>
-  </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1737" size="9" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">1</numericalscalar>
-    <numericalscalar index="1">0</numericalscalar>
-    <numericalscalar index="2">0</numericalscalar>
-    <numericalscalar index="3">0.70710678118654746</numericalscalar>
-    <numericalscalar index="4">0</numericalscalar>
-    <numericalscalar index="5">-0.70710678118654757</numericalscalar>
-    <numericalscalar index="6">0.57735026918962584</numericalscalar>
-    <numericalscalar index="7">0</numericalscalar>
-    <numericalscalar index="8">-0.81649658092772603</numericalscalar>
-  </object>
-  <object class="OrthogonalUniVariatePolynomial" id="1735" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1736"/>
-    <object member="recurrenceCoefficients_" id="1737"/>
-  </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1731" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1732"/>
-    <object index="1" id="1735"/>
-  </object>
-  <object class="ProductPolynomialEvaluation" id="1726" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1727"/>
-    <object member="outputDescription_" id="1728"/>
-    <object member="parameter_" id="1729"/>
-    <object member="parameterDescription_" id="1730"/>
-    <object member="polynomials_" id="1731"/>
-  </object>
-  <object class="Point" id="1739" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1740" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1732"/>
-    <object index="1" id="1735"/>
-  </object>
-  <object class="ProductPolynomialGradient" id="1738" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1739"/>
-    <object member="polynomials_" id="1740"/>
-  </object>
-  <object class="Point" id="1742" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1743" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1732"/>
-    <object index="1" id="1735"/>
-  </object>
-  <object class="ProductPolynomialHessian" id="1741" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1742"/>
-    <object member="polynomials_" id="1743"/>
-  </object>
-  <object class="FunctionImplementation" id="1725" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1726"/>
-    <object member="gradient_" id="1738"/>
-    <object member="hessian_" id="1741"/>
-  </object>
-  <object class="Description" id="1746" size="2" StudyVisible="false" StudyLabel="">
-    <string index="0">x0</string>
-    <string index="1">x1</string>
-  </object>
-  <object class="Description" id="1747" size="1" StudyVisible="false" StudyLabel="">
-    <string index="0">y0</string>
-  </object>
-  <object class="Point" id="1748" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1749" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1752" size="1" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">1</numericalscalar>
-  </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1753" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1751" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1752"/>
-    <object member="recurrenceCoefficients_" id="1753"/>
-  </object>
-  <object class="Point" id="1755" size="5" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="620" size="5" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">0.61237243569579458</numericalscalar>
     <numericalscalar index="1">-0</numericalscalar>
     <numericalscalar index="2">-1.2247448713915889</numericalscalar>
     <numericalscalar index="3">0</numericalscalar>
     <numericalscalar index="4">0.20412414523193151</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1756" size="12" StudyVisible="false" StudyLabel="">
+  <object class="PersistentCollection&lt;Scalar&gt;" id="621" size="12" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
     <numericalscalar index="1">0</numericalscalar>
     <numericalscalar index="2">0</numericalscalar>
@@ -174,169 +102,70 @@
     <numericalscalar index="10">0</numericalscalar>
     <numericalscalar index="11">-0.8660254037844386</numericalscalar>
   </object>
-  <object class="OrthogonalUniVariatePolynomial" id="1754" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1755"/>
-    <object member="recurrenceCoefficients_" id="1756"/>
+  <object class="OrthogonalUniVariatePolynomial" id="619" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="620"/>
+    <object member="recurrenceCoefficients_" id="621"/>
   </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1750" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1751"/>
-    <object index="1" id="1754"/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="615" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="616"/>
+    <object index="1" id="619"/>
   </object>
-  <object class="ProductPolynomialEvaluation" id="1745" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1746"/>
-    <object member="outputDescription_" id="1747"/>
-    <object member="parameter_" id="1748"/>
-    <object member="parameterDescription_" id="1749"/>
-    <object member="polynomials_" id="1750"/>
+  <object class="ProductPolynomialEvaluation" id="610" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="611"/>
+    <object member="outputDescription_" id="612"/>
+    <object member="parameter_" id="613"/>
+    <object member="parameterDescription_" id="614"/>
+    <object member="polynomials_" id="615"/>
   </object>
-  <object class="Point" id="1758" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1759" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1751"/>
-    <object index="1" id="1754"/>
+  <object class="Point" id="623" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="624" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="616"/>
+    <object index="1" id="619"/>
   </object>
-  <object class="ProductPolynomialGradient" id="1757" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1758"/>
-    <object member="polynomials_" id="1759"/>
+  <object class="ProductPolynomialGradient" id="622" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="623"/>
+    <object member="polynomials_" id="624"/>
   </object>
-  <object class="Point" id="1761" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1762" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1751"/>
-    <object index="1" id="1754"/>
+  <object class="Point" id="626" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="627" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="616"/>
+    <object index="1" id="619"/>
   </object>
-  <object class="ProductPolynomialHessian" id="1760" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1761"/>
-    <object member="polynomials_" id="1762"/>
+  <object class="ProductPolynomialHessian" id="625" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="626"/>
+    <object member="polynomials_" id="627"/>
   </object>
-  <object class="FunctionImplementation" id="1744" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1745"/>
-    <object member="gradient_" id="1757"/>
-    <object member="hessian_" id="1760"/>
+  <object class="FunctionImplementation" id="609" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="610"/>
+    <object member="gradient_" id="622"/>
+    <object member="hessian_" id="625"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1705" size="3" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1706"/>
-    <object index="1" id="1725"/>
-    <object index="2" id="1744"/>
-  </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1764" size="3" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">-319.09479727451782</numericalscalar>
-    <numericalscalar index="1">0.0012400689049100638</numericalscalar>
-    <numericalscalar index="2">0.0067374271954788378</numericalscalar>
-  </object>
-  <object class="SampleImplementation" id="1763" size_="3" dimension_="1" StudyVisible="false" StudyLabel="">
-    <object member="data_" id="1764"/>
-  </object>
-  <object class="DualLinearCombinationEvaluation" id="1704" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1705"/>
-    <object member="coefficients_" id="1763"/>
-  </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1767" size="3" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1706"/>
-    <object index="1" id="1725"/>
-    <object index="2" id="1744"/>
-  </object>
-  <object class="DualLinearCombinationEvaluation" id="1766" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1767"/>
-    <object member="coefficients_" id="1763"/>
-  </object>
-  <object class="DualLinearCombinationGradient" id="1765" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1766"/>
-  </object>
-  <object class="DualLinearCombinationHessian" id="1768" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1766"/>
-  </object>
-  <object class="FunctionImplementation" id="1703" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_1">
-    <object member="evaluation_" id="1704"/>
-    <object member="gradient_" id="1765"/>
-    <object member="hessian_" id="1768"/>
-  </object>
-  <object class="Description" id="1774" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="630" size="2" StudyVisible="false" StudyLabel="">
     <string index="0">x0</string>
     <string index="1">x1</string>
   </object>
-  <object class="Description" id="1775" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="631" size="1" StudyVisible="false" StudyLabel="">
     <string index="0">y0</string>
   </object>
-  <object class="Point" id="1776" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1777" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1780" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="632" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="633" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="636" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1781" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1779" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1780"/>
-    <object member="recurrenceCoefficients_" id="1781"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="637" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="635" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="636"/>
+    <object member="recurrenceCoefficients_" id="637"/>
   </object>
-  <object class="Point" id="1783" size="1" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">1</numericalscalar>
-  </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1784" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1782" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1783"/>
-    <object member="recurrenceCoefficients_" id="1784"/>
-  </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1778" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1779"/>
-    <object index="1" id="1782"/>
-  </object>
-  <object class="ProductPolynomialEvaluation" id="1773" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1774"/>
-    <object member="outputDescription_" id="1775"/>
-    <object member="parameter_" id="1776"/>
-    <object member="parameterDescription_" id="1777"/>
-    <object member="polynomials_" id="1778"/>
-  </object>
-  <object class="Point" id="1786" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1787" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1779"/>
-    <object index="1" id="1782"/>
-  </object>
-  <object class="ProductPolynomialGradient" id="1785" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1786"/>
-    <object member="polynomials_" id="1787"/>
-  </object>
-  <object class="Point" id="1789" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1790" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1779"/>
-    <object index="1" id="1782"/>
-  </object>
-  <object class="ProductPolynomialHessian" id="1788" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1789"/>
-    <object member="polynomials_" id="1790"/>
-  </object>
-  <object class="FunctionImplementation" id="1772" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1773"/>
-    <object member="gradient_" id="1785"/>
-    <object member="hessian_" id="1788"/>
-  </object>
-  <object class="Description" id="1793" size="2" StudyVisible="false" StudyLabel="">
-    <string index="0">x0</string>
-    <string index="1">x1</string>
-  </object>
-  <object class="Description" id="1794" size="1" StudyVisible="false" StudyLabel="">
-    <string index="0">y0</string>
-  </object>
-  <object class="Point" id="1795" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1796" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1799" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="639" size="6" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">0</numericalscalar>
-    <numericalscalar index="1">1</numericalscalar>
+    <numericalscalar index="1">1.3693063937629155</numericalscalar>
+    <numericalscalar index="2">-0</numericalscalar>
+    <numericalscalar index="3">-0.91287092917527679</numericalscalar>
+    <numericalscalar index="4">0</numericalscalar>
+    <numericalscalar index="5">0.091287092917527679</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1800" size="3" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">1</numericalscalar>
-    <numericalscalar index="1">0</numericalscalar>
-    <numericalscalar index="2">0</numericalscalar>
-  </object>
-  <object class="OrthogonalUniVariatePolynomial" id="1798" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1799"/>
-    <object member="recurrenceCoefficients_" id="1800"/>
-  </object>
-  <object class="Point" id="1802" size="4" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">-0</numericalscalar>
-    <numericalscalar index="1">-1.2247448713915892</numericalscalar>
-    <numericalscalar index="2">0</numericalscalar>
-    <numericalscalar index="3">0.40824829046386302</numericalscalar>
-  </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1803" size="9" StudyVisible="false" StudyLabel="">
+  <object class="PersistentCollection&lt;Scalar&gt;" id="640" size="15" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
     <numericalscalar index="1">0</numericalscalar>
     <numericalscalar index="2">0</numericalscalar>
@@ -346,257 +175,530 @@
     <numericalscalar index="6">0.57735026918962584</numericalscalar>
     <numericalscalar index="7">0</numericalscalar>
     <numericalscalar index="8">-0.81649658092772603</numericalscalar>
+    <numericalscalar index="9">0.5</numericalscalar>
+    <numericalscalar index="10">0</numericalscalar>
+    <numericalscalar index="11">-0.8660254037844386</numericalscalar>
+    <numericalscalar index="12">0.44721359549995793</numericalscalar>
+    <numericalscalar index="13">0</numericalscalar>
+    <numericalscalar index="14">-0.89442719099991586</numericalscalar>
   </object>
-  <object class="OrthogonalUniVariatePolynomial" id="1801" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1802"/>
-    <object member="recurrenceCoefficients_" id="1803"/>
+  <object class="OrthogonalUniVariatePolynomial" id="638" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="639"/>
+    <object member="recurrenceCoefficients_" id="640"/>
   </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1797" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1798"/>
-    <object index="1" id="1801"/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="634" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="635"/>
+    <object index="1" id="638"/>
   </object>
-  <object class="ProductPolynomialEvaluation" id="1792" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1793"/>
-    <object member="outputDescription_" id="1794"/>
-    <object member="parameter_" id="1795"/>
-    <object member="parameterDescription_" id="1796"/>
-    <object member="polynomials_" id="1797"/>
+  <object class="ProductPolynomialEvaluation" id="629" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="630"/>
+    <object member="outputDescription_" id="631"/>
+    <object member="parameter_" id="632"/>
+    <object member="parameterDescription_" id="633"/>
+    <object member="polynomials_" id="634"/>
   </object>
-  <object class="Point" id="1805" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1806" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1798"/>
-    <object index="1" id="1801"/>
+  <object class="Point" id="642" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="643" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="635"/>
+    <object index="1" id="638"/>
   </object>
-  <object class="ProductPolynomialGradient" id="1804" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1805"/>
-    <object member="polynomials_" id="1806"/>
+  <object class="ProductPolynomialGradient" id="641" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="642"/>
+    <object member="polynomials_" id="643"/>
   </object>
-  <object class="Point" id="1808" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1809" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1798"/>
-    <object index="1" id="1801"/>
+  <object class="Point" id="645" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="646" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="635"/>
+    <object index="1" id="638"/>
   </object>
-  <object class="ProductPolynomialHessian" id="1807" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1808"/>
-    <object member="polynomials_" id="1809"/>
+  <object class="ProductPolynomialHessian" id="644" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="645"/>
+    <object member="polynomials_" id="646"/>
   </object>
-  <object class="FunctionImplementation" id="1791" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1792"/>
-    <object member="gradient_" id="1804"/>
-    <object member="hessian_" id="1807"/>
+  <object class="FunctionImplementation" id="628" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="629"/>
+    <object member="gradient_" id="641"/>
+    <object member="hessian_" id="644"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1771" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1772"/>
-    <object index="1" id="1791"/>
+  <object class="PersistentCollection&lt;Function&gt;" id="589" size="3" StudyVisible="false" StudyLabel="">
+    <object index="0" id="590"/>
+    <object index="1" id="609"/>
+    <object index="2" id="628"/>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1811" size="2" StudyVisible="false" StudyLabel="">
-    <numericalscalar index="0">3.4269432185843227</numericalscalar>
-    <numericalscalar index="1">0.0005189840182400836</numericalscalar>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="648" size="3" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">-256.10139077147784</numericalscalar>
+    <numericalscalar index="1">-0.00010960580387834097</numericalscalar>
+    <numericalscalar index="2">-0.00054720201393627097</numericalscalar>
   </object>
-  <object class="SampleImplementation" id="1810" size_="2" dimension_="1" StudyVisible="false" StudyLabel="">
-    <object member="data_" id="1811"/>
+  <object class="SampleImplementation" id="647" size_="3" dimension_="1" StudyVisible="false" StudyLabel="">
+    <object member="data_" id="648"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1770" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1771"/>
-    <object member="coefficients_" id="1810"/>
+  <object class="DualLinearCombinationEvaluation" id="588" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="589"/>
+    <object member="coefficients_" id="647"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1814" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1772"/>
-    <object index="1" id="1791"/>
+  <object class="PersistentCollection&lt;Function&gt;" id="651" size="3" StudyVisible="false" StudyLabel="">
+    <object index="0" id="590"/>
+    <object index="1" id="609"/>
+    <object index="2" id="628"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1813" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1814"/>
-    <object member="coefficients_" id="1810"/>
+  <object class="DualLinearCombinationEvaluation" id="650" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="651"/>
+    <object member="coefficients_" id="647"/>
   </object>
-  <object class="DualLinearCombinationGradient" id="1812" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1813"/>
+  <object class="DualLinearCombinationGradient" id="649" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="650"/>
   </object>
-  <object class="DualLinearCombinationHessian" id="1815" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1813"/>
+  <object class="DualLinearCombinationHessian" id="652" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="650"/>
   </object>
-  <object class="FunctionImplementation" id="1769" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_2">
-    <object member="evaluation_" id="1770"/>
-    <object member="gradient_" id="1812"/>
-    <object member="hessian_" id="1815"/>
+  <object class="FunctionImplementation" id="587" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_1">
+    <object member="evaluation_" id="588"/>
+    <object member="gradient_" id="649"/>
+    <object member="hessian_" id="652"/>
   </object>
-  <object class="Description" id="1821" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="658" size="2" StudyVisible="false" StudyLabel="">
     <string index="0">x0</string>
     <string index="1">x1</string>
   </object>
-  <object class="Description" id="1822" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="659" size="1" StudyVisible="false" StudyLabel="">
     <string index="0">y0</string>
   </object>
-  <object class="Point" id="1823" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1824" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1827" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="660" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="661" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="664" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1828" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1826" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1827"/>
-    <object member="recurrenceCoefficients_" id="1828"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="665" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="663" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="664"/>
+    <object member="recurrenceCoefficients_" id="665"/>
   </object>
-  <object class="Point" id="1830" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="667" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1831" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1829" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1830"/>
-    <object member="recurrenceCoefficients_" id="1831"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="668" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="666" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="667"/>
+    <object member="recurrenceCoefficients_" id="668"/>
   </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1825" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1826"/>
-    <object index="1" id="1829"/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="662" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="663"/>
+    <object index="1" id="666"/>
   </object>
-  <object class="ProductPolynomialEvaluation" id="1820" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1821"/>
-    <object member="outputDescription_" id="1822"/>
-    <object member="parameter_" id="1823"/>
-    <object member="parameterDescription_" id="1824"/>
-    <object member="polynomials_" id="1825"/>
+  <object class="ProductPolynomialEvaluation" id="657" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="658"/>
+    <object member="outputDescription_" id="659"/>
+    <object member="parameter_" id="660"/>
+    <object member="parameterDescription_" id="661"/>
+    <object member="polynomials_" id="662"/>
   </object>
-  <object class="Point" id="1833" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1834" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1826"/>
-    <object index="1" id="1829"/>
+  <object class="Point" id="670" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="671" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="663"/>
+    <object index="1" id="666"/>
   </object>
-  <object class="ProductPolynomialGradient" id="1832" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1833"/>
-    <object member="polynomials_" id="1834"/>
+  <object class="ProductPolynomialGradient" id="669" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="670"/>
+    <object member="polynomials_" id="671"/>
   </object>
-  <object class="Point" id="1836" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1837" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1826"/>
-    <object index="1" id="1829"/>
+  <object class="Point" id="673" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="674" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="663"/>
+    <object index="1" id="666"/>
   </object>
-  <object class="ProductPolynomialHessian" id="1835" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1836"/>
-    <object member="polynomials_" id="1837"/>
+  <object class="ProductPolynomialHessian" id="672" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="673"/>
+    <object member="polynomials_" id="674"/>
   </object>
-  <object class="FunctionImplementation" id="1819" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1820"/>
-    <object member="gradient_" id="1832"/>
-    <object member="hessian_" id="1835"/>
+  <object class="FunctionImplementation" id="656" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="657"/>
+    <object member="gradient_" id="669"/>
+    <object member="hessian_" id="672"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1818" size="1" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1819"/>
+  <object class="Description" id="677" size="2" StudyVisible="false" StudyLabel="">
+    <string index="0">x0</string>
+    <string index="1">x1</string>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1839" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="678" size="1" StudyVisible="false" StudyLabel="">
+    <string index="0">y0</string>
+  </object>
+  <object class="Point" id="679" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="680" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="683" size="2" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">0</numericalscalar>
+    <numericalscalar index="1">1</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="684" size="3" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+    <numericalscalar index="1">0</numericalscalar>
+    <numericalscalar index="2">0</numericalscalar>
+  </object>
+  <object class="OrthogonalUniVariatePolynomial" id="682" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="683"/>
+    <object member="recurrenceCoefficients_" id="684"/>
+  </object>
+  <object class="Point" id="686" size="5" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">0.61237243569579458</numericalscalar>
+    <numericalscalar index="1">-0</numericalscalar>
+    <numericalscalar index="2">-1.2247448713915889</numericalscalar>
+    <numericalscalar index="3">0</numericalscalar>
+    <numericalscalar index="4">0.20412414523193151</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="687" size="12" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+    <numericalscalar index="1">0</numericalscalar>
+    <numericalscalar index="2">0</numericalscalar>
+    <numericalscalar index="3">0.70710678118654746</numericalscalar>
+    <numericalscalar index="4">0</numericalscalar>
+    <numericalscalar index="5">-0.70710678118654757</numericalscalar>
+    <numericalscalar index="6">0.57735026918962584</numericalscalar>
+    <numericalscalar index="7">0</numericalscalar>
+    <numericalscalar index="8">-0.81649658092772603</numericalscalar>
+    <numericalscalar index="9">0.5</numericalscalar>
+    <numericalscalar index="10">0</numericalscalar>
+    <numericalscalar index="11">-0.8660254037844386</numericalscalar>
+  </object>
+  <object class="OrthogonalUniVariatePolynomial" id="685" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="686"/>
+    <object member="recurrenceCoefficients_" id="687"/>
+  </object>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="681" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="682"/>
+    <object index="1" id="685"/>
+  </object>
+  <object class="ProductPolynomialEvaluation" id="676" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="677"/>
+    <object member="outputDescription_" id="678"/>
+    <object member="parameter_" id="679"/>
+    <object member="parameterDescription_" id="680"/>
+    <object member="polynomials_" id="681"/>
+  </object>
+  <object class="Point" id="689" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="690" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="682"/>
+    <object index="1" id="685"/>
+  </object>
+  <object class="ProductPolynomialGradient" id="688" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="689"/>
+    <object member="polynomials_" id="690"/>
+  </object>
+  <object class="Point" id="692" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="693" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="682"/>
+    <object index="1" id="685"/>
+  </object>
+  <object class="ProductPolynomialHessian" id="691" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="692"/>
+    <object member="polynomials_" id="693"/>
+  </object>
+  <object class="FunctionImplementation" id="675" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="676"/>
+    <object member="gradient_" id="688"/>
+    <object member="hessian_" id="691"/>
+  </object>
+  <object class="PersistentCollection&lt;Function&gt;" id="655" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="656"/>
+    <object index="1" id="675"/>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="695" size="2" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">3.390026677662644</numericalscalar>
+    <numericalscalar index="1">-4.5537460291420106e-05</numericalscalar>
+  </object>
+  <object class="SampleImplementation" id="694" size_="2" dimension_="1" StudyVisible="false" StudyLabel="">
+    <object member="data_" id="695"/>
+  </object>
+  <object class="DualLinearCombinationEvaluation" id="654" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="655"/>
+    <object member="coefficients_" id="694"/>
+  </object>
+  <object class="PersistentCollection&lt;Function&gt;" id="698" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="656"/>
+    <object index="1" id="675"/>
+  </object>
+  <object class="DualLinearCombinationEvaluation" id="697" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="698"/>
+    <object member="coefficients_" id="694"/>
+  </object>
+  <object class="DualLinearCombinationGradient" id="696" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="697"/>
+  </object>
+  <object class="DualLinearCombinationHessian" id="699" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="697"/>
+  </object>
+  <object class="FunctionImplementation" id="653" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_2">
+    <object member="evaluation_" id="654"/>
+    <object member="gradient_" id="696"/>
+    <object member="hessian_" id="699"/>
+  </object>
+  <object class="Description" id="705" size="2" StudyVisible="false" StudyLabel="">
+    <string index="0">x0</string>
+    <string index="1">x1</string>
+  </object>
+  <object class="Description" id="706" size="1" StudyVisible="false" StudyLabel="">
+    <string index="0">y0</string>
+  </object>
+  <object class="Point" id="707" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="708" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="711" size="1" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="712" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="710" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="711"/>
+    <object member="recurrenceCoefficients_" id="712"/>
+  </object>
+  <object class="Point" id="714" size="1" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="715" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="713" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="714"/>
+    <object member="recurrenceCoefficients_" id="715"/>
+  </object>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="709" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="710"/>
+    <object index="1" id="713"/>
+  </object>
+  <object class="ProductPolynomialEvaluation" id="704" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="705"/>
+    <object member="outputDescription_" id="706"/>
+    <object member="parameter_" id="707"/>
+    <object member="parameterDescription_" id="708"/>
+    <object member="polynomials_" id="709"/>
+  </object>
+  <object class="Point" id="717" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="718" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="710"/>
+    <object index="1" id="713"/>
+  </object>
+  <object class="ProductPolynomialGradient" id="716" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="717"/>
+    <object member="polynomials_" id="718"/>
+  </object>
+  <object class="Point" id="720" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="721" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="710"/>
+    <object index="1" id="713"/>
+  </object>
+  <object class="ProductPolynomialHessian" id="719" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="720"/>
+    <object member="polynomials_" id="721"/>
+  </object>
+  <object class="FunctionImplementation" id="703" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="704"/>
+    <object member="gradient_" id="716"/>
+    <object member="hessian_" id="719"/>
+  </object>
+  <object class="PersistentCollection&lt;Function&gt;" id="702" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="703"/>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="723" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1.6647681630784711e-14</numericalscalar>
   </object>
-  <object class="SampleImplementation" id="1838" size_="1" dimension_="1" StudyVisible="false" StudyLabel="">
-    <object member="data_" id="1839"/>
+  <object class="SampleImplementation" id="722" size_="1" dimension_="1" StudyVisible="false" StudyLabel="">
+    <object member="data_" id="723"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1817" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1818"/>
-    <object member="coefficients_" id="1838"/>
+  <object class="DualLinearCombinationEvaluation" id="701" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="702"/>
+    <object member="coefficients_" id="722"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1842" size="1" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1819"/>
+  <object class="PersistentCollection&lt;Function&gt;" id="726" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="703"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1841" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1842"/>
-    <object member="coefficients_" id="1838"/>
+  <object class="DualLinearCombinationEvaluation" id="725" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="726"/>
+    <object member="coefficients_" id="722"/>
   </object>
-  <object class="DualLinearCombinationGradient" id="1840" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1841"/>
+  <object class="DualLinearCombinationGradient" id="724" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="725"/>
   </object>
-  <object class="DualLinearCombinationHessian" id="1843" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1841"/>
+  <object class="DualLinearCombinationHessian" id="727" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="725"/>
   </object>
-  <object class="FunctionImplementation" id="1816" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_3">
-    <object member="evaluation_" id="1817"/>
-    <object member="gradient_" id="1840"/>
-    <object member="hessian_" id="1843"/>
+  <object class="FunctionImplementation" id="700" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_3">
+    <object member="evaluation_" id="701"/>
+    <object member="gradient_" id="724"/>
+    <object member="hessian_" id="727"/>
   </object>
-  <object class="Description" id="1849" size="2" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="733" size="2" StudyVisible="false" StudyLabel="">
     <string index="0">x0</string>
     <string index="1">x1</string>
   </object>
-  <object class="Description" id="1850" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Description" id="734" size="1" StudyVisible="false" StudyLabel="">
     <string index="0">y0</string>
   </object>
-  <object class="Point" id="1851" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Description" id="1852" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="Point" id="1855" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="735" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="736" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="739" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1856" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1854" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1855"/>
-    <object member="recurrenceCoefficients_" id="1856"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="740" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="738" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="739"/>
+    <object member="recurrenceCoefficients_" id="740"/>
   </object>
-  <object class="Point" id="1858" size="1" StudyVisible="false" StudyLabel="">
+  <object class="Point" id="742" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">1</numericalscalar>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1859" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="OrthogonalUniVariatePolynomial" id="1857" StudyVisible="false" StudyLabel="">
-    <object member="coefficients_" id="1858"/>
-    <object member="recurrenceCoefficients_" id="1859"/>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="743" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="741" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="742"/>
+    <object member="recurrenceCoefficients_" id="743"/>
   </object>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1853" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1854"/>
-    <object index="1" id="1857"/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="737" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="738"/>
+    <object index="1" id="741"/>
   </object>
-  <object class="ProductPolynomialEvaluation" id="1848" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
-    <object member="inputDescription_" id="1849"/>
-    <object member="outputDescription_" id="1850"/>
-    <object member="parameter_" id="1851"/>
-    <object member="parameterDescription_" id="1852"/>
-    <object member="polynomials_" id="1853"/>
+  <object class="ProductPolynomialEvaluation" id="732" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="733"/>
+    <object member="outputDescription_" id="734"/>
+    <object member="parameter_" id="735"/>
+    <object member="parameterDescription_" id="736"/>
+    <object member="polynomials_" id="737"/>
   </object>
-  <object class="Point" id="1861" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1862" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1854"/>
-    <object index="1" id="1857"/>
+  <object class="Point" id="745" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="746" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="738"/>
+    <object index="1" id="741"/>
   </object>
-  <object class="ProductPolynomialGradient" id="1860" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1861"/>
-    <object member="polynomials_" id="1862"/>
+  <object class="ProductPolynomialGradient" id="744" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="745"/>
+    <object member="polynomials_" id="746"/>
   </object>
-  <object class="Point" id="1864" size="0" StudyVisible="false" StudyLabel=""/>
-  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="1865" size="2" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1854"/>
-    <object index="1" id="1857"/>
+  <object class="Point" id="748" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="749" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="738"/>
+    <object index="1" id="741"/>
   </object>
-  <object class="ProductPolynomialHessian" id="1863" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="parameter_" id="1864"/>
-    <object member="polynomials_" id="1865"/>
+  <object class="ProductPolynomialHessian" id="747" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="748"/>
+    <object member="polynomials_" id="749"/>
   </object>
-  <object class="FunctionImplementation" id="1847" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1848"/>
-    <object member="gradient_" id="1860"/>
-    <object member="hessian_" id="1863"/>
+  <object class="FunctionImplementation" id="731" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="732"/>
+    <object member="gradient_" id="744"/>
+    <object member="hessian_" id="747"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1846" size="1" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1847"/>
+  <object class="PersistentCollection&lt;Function&gt;" id="730" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="731"/>
   </object>
-  <object class="PersistentCollection&lt;Scalar&gt;" id="1867" size="1" StudyVisible="false" StudyLabel="">
+  <object class="PersistentCollection&lt;Scalar&gt;" id="751" size="1" StudyVisible="false" StudyLabel="">
     <numericalscalar index="0">-1.4338653342675874e-14</numericalscalar>
   </object>
-  <object class="SampleImplementation" id="1866" size_="1" dimension_="1" StudyVisible="false" StudyLabel="">
-    <object member="data_" id="1867"/>
+  <object class="SampleImplementation" id="750" size_="1" dimension_="1" StudyVisible="false" StudyLabel="">
+    <object member="data_" id="751"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1845" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1846"/>
-    <object member="coefficients_" id="1866"/>
+  <object class="DualLinearCombinationEvaluation" id="729" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="730"/>
+    <object member="coefficients_" id="750"/>
   </object>
-  <object class="PersistentCollection&lt;Function&gt;" id="1870" size="1" StudyVisible="false" StudyLabel="">
-    <object index="0" id="1847"/>
+  <object class="PersistentCollection&lt;Function&gt;" id="754" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="731"/>
   </object>
-  <object class="DualLinearCombinationEvaluation" id="1869" StudyVisible="false" StudyLabel="">
-    <object member="functionsCollection_" id="1870"/>
-    <object member="coefficients_" id="1866"/>
+  <object class="DualLinearCombinationEvaluation" id="753" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="754"/>
+    <object member="coefficients_" id="750"/>
   </object>
-  <object class="DualLinearCombinationGradient" id="1868" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1869"/>
+  <object class="DualLinearCombinationGradient" id="752" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="753"/>
   </object>
-  <object class="DualLinearCombinationHessian" id="1871" StudyVisible="false" StudyLabel="">
-    <object member="evaluation_" id="1869"/>
+  <object class="DualLinearCombinationHessian" id="755" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="753"/>
   </object>
-  <object class="FunctionImplementation" id="1844" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_4">
-    <object member="evaluation_" id="1845"/>
-    <object member="gradient_" id="1868"/>
-    <object member="hessian_" id="1871"/>
+  <object class="FunctionImplementation" id="728" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_4">
+    <object member="evaluation_" id="729"/>
+    <object member="gradient_" id="752"/>
+    <object member="hessian_" id="755"/>
+  </object>
+  <object class="Description" id="761" size="2" StudyVisible="false" StudyLabel="">
+    <string index="0">x0</string>
+    <string index="1">x1</string>
+  </object>
+  <object class="Description" id="762" size="1" StudyVisible="false" StudyLabel="">
+    <string index="0">y0</string>
+  </object>
+  <object class="Point" id="763" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Description" id="764" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="Point" id="767" size="1" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="768" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="766" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="767"/>
+    <object member="recurrenceCoefficients_" id="768"/>
+  </object>
+  <object class="Point" id="770" size="1" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1</numericalscalar>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="771" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="OrthogonalUniVariatePolynomial" id="769" StudyVisible="false" StudyLabel="">
+    <object member="coefficients_" id="770"/>
+    <object member="recurrenceCoefficients_" id="771"/>
+  </object>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="765" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="766"/>
+    <object index="1" id="769"/>
+  </object>
+  <object class="ProductPolynomialEvaluation" id="760" callsNumber_="0" checkOutput_="true" StudyVisible="false" StudyLabel="">
+    <object member="inputDescription_" id="761"/>
+    <object member="outputDescription_" id="762"/>
+    <object member="parameter_" id="763"/>
+    <object member="parameterDescription_" id="764"/>
+    <object member="polynomials_" id="765"/>
+  </object>
+  <object class="Point" id="773" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="774" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="766"/>
+    <object index="1" id="769"/>
+  </object>
+  <object class="ProductPolynomialGradient" id="772" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="773"/>
+    <object member="polynomials_" id="774"/>
+  </object>
+  <object class="Point" id="776" size="0" StudyVisible="false" StudyLabel=""/>
+  <object class="PersistentCollection&lt;UniVariatePolynomial&gt;" id="777" size="2" StudyVisible="false" StudyLabel="">
+    <object index="0" id="766"/>
+    <object index="1" id="769"/>
+  </object>
+  <object class="ProductPolynomialHessian" id="775" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="parameter_" id="776"/>
+    <object member="polynomials_" id="777"/>
+  </object>
+  <object class="FunctionImplementation" id="759" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="760"/>
+    <object member="gradient_" id="772"/>
+    <object member="hessian_" id="775"/>
+  </object>
+  <object class="PersistentCollection&lt;Function&gt;" id="758" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="759"/>
+  </object>
+  <object class="PersistentCollection&lt;Scalar&gt;" id="779" size="1" StudyVisible="false" StudyLabel="">
+    <numericalscalar index="0">1.0823570100510184e-14</numericalscalar>
+  </object>
+  <object class="SampleImplementation" id="778" size_="1" dimension_="1" StudyVisible="false" StudyLabel="">
+    <object member="data_" id="779"/>
+  </object>
+  <object class="DualLinearCombinationEvaluation" id="757" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="758"/>
+    <object member="coefficients_" id="778"/>
+  </object>
+  <object class="PersistentCollection&lt;Function&gt;" id="782" size="1" StudyVisible="false" StudyLabel="">
+    <object index="0" id="759"/>
+  </object>
+  <object class="DualLinearCombinationEvaluation" id="781" StudyVisible="false" StudyLabel="">
+    <object member="functionsCollection_" id="782"/>
+    <object member="coefficients_" id="778"/>
+  </object>
+  <object class="DualLinearCombinationGradient" id="780" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="781"/>
+  </object>
+  <object class="DualLinearCombinationHessian" id="783" StudyVisible="false" StudyLabel="">
+    <object member="evaluation_" id="781"/>
+  </object>
+  <object class="FunctionImplementation" id="756" useDefaultGradientImplementation_="false" useDefaultHessianImplementation_="false" callsNumber_="0" StudyVisible="true" StudyLabel="pce_model_mode_5">
+    <object member="evaluation_" id="757"/>
+    <object member="gradient_" id="780"/>
+    <object member="hessian_" id="783"/>
   </object>
 </openturns-study>

@@ -70,7 +70,6 @@ def train_PCE(X_train: ot.Sample, U_train: ot.Sample, total_degree: int, n_compo
     # Fit PCA to the training output samples and transform to sample type
     pca = PCA(n_components=n_components)
     U_modes = ot.Sample(pca.fit_transform(U_train))
-    U_modes = ot.Sample(pca.fit_transform(U_train))
     distribution = ot.JointDistribution([ot.Normal(12E3, 3E3), 
                                          ot.Normal(58E3, 14.5E3), 
                                          ot.Normal(38.7, 2.0), 
@@ -569,29 +568,91 @@ def define_param_list(X_raw, n_steps, U_meas, verbose=False):
     # plt.fill_between(Z[Z < max_level], U_pred_min, U_pred_max, color='gray', alpha=0.5)
     return params
 
-def run_calibration(pce_models, pca, params, Z, U_meas):
-    NRSME_deform = []
-    NRSME_slope = []
-    RSME_deform = []
-    RSME_slope = []
 
+
+def run_calibration(X, n, Z, run_name, pca, pce_models, U_meas, verbose=False):
+    import numpy as np
+    import pandas as pd
+    """
+    Runs calibration for the parameter ranges as defined in input array X using n steps for each parameter, ensuring total number of runs N=n^4
+
+    Parameters:
+        X (array-like) : array of input parameters E_B, E_C, phi_A, phi_B of size 4 x M, with M being the number of samples
+        n (int) : number of steps for each parameter range
+
+    Returns:
+
+    """
+    # Define parameter ranges
+
+    E_B_lo = X[:,0].min()
+    E_B_hi = X[:,0].max()
+
+    E_C_lo = X[:,1].min()
+    E_C_hi = X[:,1].max()
+
+    phi_A_lo = X[:,2].min()
+    phi_A_hi = X[:,2].max()
+
+    phi_B_lo = X[:,3].min()
+    phi_B_hi = X[:,3].max()
+
+    U_meas
+
+    if verbose:
+        print("E_B_lo:", E_B_lo)
+        print("E_B_hi:", E_B_hi)
+        print("E_C_lo:", E_C_lo)
+        print("E_C_hi:", E_C_hi)
+        print("phi_A_lo:", phi_A_lo)
+        print("phi_A_hi:", phi_A_hi)
+        print("phi_B_lo:", phi_B_lo)
+        print("phi_B_hi:", phi_B_hi)
+
+    phi_A = np.linspace(phi_A_lo, phi_A_hi, n)
+    phi_B = np.linspace(phi_B_lo, phi_B_hi, n)
+    E_B = np.linspace(E_B_lo, E_B_hi, n)
+    E_C = np.linspace(E_C_lo, E_C_hi, n)
+
+    ## Define result lists
     U_predicted = []
     theta_predicted = []
+    params = []
 
     i = 0
-    for X_i in params:
-        U_i = predict_deformation(X_i, pca, pce_models)
-        U_predicted.append(U_i)
-        theta_i = np.gradient(U_i, Z)
-        theta_predicted.append(theta_i)
-        NRSME_deform.append(np.mean(np.sqrt((U_i - U_meas['U_inclino'])**2)) / abs(U_meas['U_inclino'].max() - U_meas['U_inclino'].min()))
-        NRSME_slope.append(np.mean(np.sqrt((theta_i - U_meas['slope'])**2)) / abs(U_meas['slope'].max() - U_meas['slope'].min()))
-        RSME_deform.append(np.sqrt(np.mean((U_i - U_meas['U_inclino'])**2)))
-        RSME_slope.append(np.sqrt(np.mean((theta_i - U_meas['slope'])**2)))
-        i+= 1
-        print(f"Iteration {i}: X_i = {X_i}", end="\r")
 
-    return NRSME_deform, NRSME_slope, RSME_deform, RSME_slope, U_predicted, theta_predicted
+    for phi_A_i in phi_A:
+        for phi_B_i in phi_B:
+            for E_B_i in E_B:
+                for E_C_i in E_C:
+                    x_new = [E_B_i, E_C_i, phi_A_i, phi_B_i]
+                    U_i = predict_deformation(x_new, pca, pce_models)
+                    U_predicted.append(U_i)
+                    theta_i = np.gradient(U_i, Z)
+                    theta_predicted.append(theta_i)
+                    NRSME_deform_i = np.mean(np.sqrt((U_i - U_meas['U_inclino'])**2)) / abs(U_meas['U_inclino'].max() - U_meas['U_inclino'].min())
+                    NRSME_slope_i = np.mean(np.sqrt((theta_i - U_meas['slope'])**2)) / abs(U_meas['slope'].max() - U_meas['slope'].min())
+                    NRSME_avg = (NRSME_deform_i + NRSME_slope_i) / 2
+                    RSME_deform_i = np.sqrt(np.mean((U_i - U_meas['U_inclino'])**2))
+                    RSME_theta_i = np.sqrt(np.mean((theta_i - U_meas['slope'])**2))
+                    paramset_i = [50E3, x_new[0], x_new[1], x_new[2], x_new[3], 39.7, 5.8, 0, 6, RSME_deform_i, RSME_theta_i, NRSME_avg]
+                    params.append(paramset_i)
+                    i += 1
+                    print(f"Iteration {i}  : x_new = {x_new}", end="\r")
+
+    # NRSME_avg = (np.array(NRSME_deform) + np.array(NRSME_slope)) / 2
+    params = np.array(params)
+
+    U_pred_min = np.min(np.array(U_predicted), axis=0)
+    U_pred_max = np.max(np.array(U_predicted), axis=0)
+
+    runlog = pd.DataFrame(columns=['E_A', 'E_B', 'E_C', 'phi_A', 'phi_B', 'phi_C', 'psi_A', 'psi_B', 'psi_C', 'RSME_deform', 'RSME_kappa', 'NRSME_avg'], 
+                            data = params)
+    if verbose: 
+        display(runlog.head())
+    runlog.to_csv(f'Logs//Calibration_Surrogate//{run_name}_parameter_log.csv')
+
+    return runlog
 
 
 
@@ -662,3 +723,89 @@ def pca_displacement_field(Y, n_components):
         pc_fields_scaled[i] *= importance[i]
 
     return pc_fields, pc_fields_scaled, importance
+
+
+
+# def run_calibration(X, n, Z, run_name, pca, pce_models, U_meas, verbose=False):
+#     import numpy as np
+#     import pandas as pd
+#     """
+#     Runs calibration for the parameter ranges as defined in input array X using n steps for each parameter, ensuring total number of runs N=n^4
+
+#     Parameters:
+#         X (array-like) : array of input parameters E_B, E_C, phi_A, phi_B of size 4 x M, with M being the number of samples
+#         n (int) : number of steps for each parameter range
+
+#     Returns:
+
+#     """
+#     # Define parameter ranges
+
+#     E_B_lo = X[:,0].min()
+#     E_B_hi = X[:,0].max()
+
+#     E_C_lo = X[:,1].min()
+#     E_C_hi = X[:,1].max()
+
+#     phi_A_lo = X[:,2].min()
+#     phi_A_hi = X[:,2].max()
+
+#     phi_B_lo = X[:,3].min()
+#     phi_B_hi = X[:,3].max()
+
+#     U_meas
+
+#     if verbose:
+#         print("E_B_lo:", E_B_lo)
+#         print("E_B_hi:", E_B_hi)
+#         print("E_C_lo:", E_C_lo)
+#         print("E_C_hi:", E_C_hi)
+#         print("phi_A_lo:", phi_A_lo)
+#         print("phi_A_hi:", phi_A_hi)
+#         print("phi_B_lo:", phi_B_lo)
+#         print("phi_B_hi:", phi_B_hi)
+
+#     phi_A = np.linspace(phi_A_lo, phi_A_hi, n)
+#     phi_B = np.linspace(phi_B_lo, phi_B_hi, n)
+#     E_B = np.linspace(E_B_lo, E_B_hi, n)
+#     E_C = np.linspace(E_C_lo, E_C_hi, n)
+
+#     ## Define result lists
+#     U_predicted = []
+#     theta_predicted = []
+#     params = []
+
+#     i = 0
+
+#     for phi_A_i in phi_A:
+#         for phi_B_i in phi_B:
+#             for E_B_i in E_B:
+#                 for E_C_i in E_C:
+#                     x_new = [E_B_i, E_C_i, phi_A_i, phi_B_i]
+#                     U_i = predict_deformation(x_new, pca, pce_models)
+#                     U_predicted.append(U_i)
+#                     theta_i = np.gradient(U_i, Z)
+#                     theta_predicted.append(theta_i)
+#                     NRSME_deform_i = np.mean(np.sqrt((U_i - U_meas['U_inclino'])**2)) / abs(U_meas['U_inclino'].max() - U_meas['U_inclino'].min())
+#                     NRSME_slope_i = np.mean(np.sqrt((theta_i - U_meas['slope'])**2)) / abs(U_meas['slope'].max() - U_meas['slope'].min())
+#                     NRSME_avg = (NRSME_deform_i + NRSME_slope_i) / 2
+#                     RSME_deform_i = np.sqrt(np.mean((U_i - U_meas['U_inclino'])**2))
+#                     RSME_theta_i = np.sqrt(np.mean((theta_i - U_meas['slope'])**2))
+#                     paramset_i = [50E3, x_new[0], x_new[1], x_new[2], x_new[3], 39.7, 5.8, 0, 6, RSME_deform_i, RSME_theta_i, NRSME_avg]
+#                     params.append(paramset_i)
+#                     i += 1
+#                     print(f"Iteration {i}  : x_new = {x_new}", end="\r")
+
+#     # NRSME_avg = (np.array(NRSME_deform) + np.array(NRSME_slope)) / 2
+#     params = np.array(params)
+
+#     U_pred_min = np.min(np.array(U_predicted), axis=0)
+#     U_pred_max = np.max(np.array(U_predicted), axis=0)
+
+#     runlog = pd.DataFrame(columns=['E_A', 'E_B', 'E_C', 'phi_A', 'phi_B', 'phi_C', 'psi_A', 'psi_B', 'psi_C', 'RSME_deform', 'RSME_kappa', 'NRSME_avg'], 
+#                             data = params)
+#     if verbose: 
+#         display(runlog.head())
+#     runlog.to_csv(f'Logs//Calibration_Surrogate//{run_name}_parameter_log.csv')
+
+#     return runlog
