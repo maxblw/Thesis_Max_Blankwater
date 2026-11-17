@@ -1,44 +1,54 @@
-``` text
-project/
-├── README.md
-├── Data/ 
-| └── FEM_Samples/
-|   ├── Calibration/
-|   | └──calibration_FEM_main.ipynb
-|   └── Parametric_Study/
-├── PLAXIS_Scripts/
-| ├── Calibration/
-│ | ├── Logs/
-| | └── Parameter_Sets/
-| └── Parametric_Study/
-├── Surrogates/
-│ ├── Logs/
-│ | ├── Calibration_Surrogate/
-| | └── Parametric_study_Surrogate/
-│ ├── calibration_surrogate_main.ipynb
-│ └── ps_surrogate_main.py
+# Thesis: Combiwall Modelling and Surrogate Analysis
 
+This repository contains the code and data supporting thesis work on the numerical modelling, calibration, and parametric analysis of a combiwall system. The workflow uses PLAXIS finite-element simulations and Polynomial Chaos Expansion (PCE) surrogate models, alongside interpretation of inclinometer and strain measurements.
+
+## Repository contents
+
+- `Measurement_interpretation/` — notebooks and Python helpers for processing inclinometer and strain measurements.
+- `PLAXIS_Scripts/Calibration/` — calibration notebook, model and result helpers, and calibration parameter sets.
+- `PLAXIS_Scripts/Parametric_Study/` — parametric-study notebook and supporting functions.
+- `Data/FEM_Samples/` — FEM sample data organized by calibration and parametric study.
+- `Data/Measurements/` and `Data/Input_coords/` — measurement and coordinate inputs.
+- `Surrogates/` — calibration and parametric-study surrogate notebooks, shared functions, and logs.
+- `PLAXIS_environment.yml` and `openTURNS_environment.yml` — Conda environment specifications for the PLAXIS scripting and surrogate workflows, respectively.
+
+## Workflows
+
+### Measurement interpretation
+
+Start with the notebooks in `Measurement_interpretation/inclino/` or `Measurement_interpretation/strain/`. Their companion Python modules contain the associated processing functions. The source measurement files are organized under `Data/Measurements/` and the interpretation folders.
+
+### FEM calibration and parametric study
+
+The main PLAXIS notebooks are:
+
+- `PLAXIS_Scripts/Calibration/calibration_FEM_main.ipynb`
+- `PLAXIS_Scripts/Parametric_Study/parametric_study_FEM_main.ipynb`
+
+Supporting calculations and result extraction are implemented in the Python modules alongside each notebook. Calibration parameter sets are stored under `PLAXIS_Scripts/Calibration/Parameter_Sets/`; FEM sample data is organized in `Data/FEM_Samples/`.
+
+### Surrogate modelling
+
+The surrogate notebooks are `Surrogates/calibration_surrogate_main.ipynb` and `Surrogates/ps_surrogate_main.ipynb`. Shared model and plotting helpers are in `Surrogates/surrogate_func.py` and `Surrogates/helper_func.py`; generated logs are under `Surrogates/Logs/`.
+
+## Environment and execution
+
+Create the Conda environment for the workflow you intend to run:
+
+```bash
+conda env create -f openTURNS_environment.yml
+conda activate openTURNS
 ```
-# FEM Modelling (`\PLAXIS_Scripts`)
-The scripts used to run calibrattion and parametric studies and subsequent analyses are contained in `\PLAXIS_Scripts`, whith the subdivisions `\Calibration` and `\Parametric_Study`. These folders contain a main notebook from which the functions are run and supporting functions files.
 
-## Calibration (`\PLAXIS_Scripts\Calibration`)
-This file contains the scripts required for parameter definition and running the calibration runs in PLAXIS, these are contained within the notebook `calibration_FEM_main.ipynb`. The function that are called for calibration are defined in `calibration_func.py` and helper function to define the plots in `helper_func.py`. Aditionally, defined parameter sets in .csv format are stored in `\Parameter_Sets`. The extracted values from PLAXIS are stored in `\Logs`. The important logs are exported to `\Data\FEM_Samples\Calibration`.
+For PLAXIS scripting, use the separate environment specification:
 
-The logs are structures using the `run_name` which is either "calibration" or "ps", for the calibration and parametric study. `sampletype`, is represented by M, N or U, describing Moment, Axial force and Displacement respectively.
+```bash
+conda env create -f PLAXIS_environment.yml
+conda activate PLAXIS
+```
 
-| Element | Filename | Description | 
-|---------|----------|-------------| 
-| Tubular piles | `{run_name}_BP_{sampletype}.csv` | Forces and displacements for the tubular piles in the combiwalls | 
-| Vibropiles (landside) | `{run_name}_VPL_{sampletype}.csv` | Forces and displacements for the vibropiles at the landside | 
-| Vibropiles (waterside) | `{run_name}_VPW_{sampletype}.csv` | Forces and displacements for the vibropiles at the waterside | 
-| Anchors (top row) | `{run_name}_GAT_{sampletype}.csv` | Forces and displacements for the top row of anchors | 
-| Anchors (bottom row) | `{run_name}_GAB_{sampletype}.csv` | Forces and displacements for the top row of anchors |
+The environment files were exported on Windows and contain an author-specific absolute `prefix`. When setting them up on another machine, remove or update that `prefix` entry as appropriate. PLAXIS scripts also require a compatible PLAXIS installation and scripting access; the environment file alone does not provide the software. Review notebook configuration and input paths for your local setup, then run notebook cells in order.
 
-# Surrogate Modelling (`\Surrogates`)
-The code used to train PCE models on FEM samples is shown in the folder `\Surrogates`. The main functions are run from a `\main` notebook with the suffix `.._surrogate_main.ipynb`. the two defined surrogate models are the parametric study (ps) model and the calibration model. the function to train and test the models are contained withing the file `surrogate_func.py` and functions to plot the results are contained in `helper_func.py`. The `\Logs` folder contains error metric logs and sobol indices used for hyperparameter tuning. 
+## Data and outputs
 
-# Data (`\Data`)
-The data used in this project is stored in the data folder, as well as the outputs from models that are used in subsequent models.
-## FEM Samples (`\FEM_Samples`)
-The PLAXIS-generated FEM samples are contained within the folder FEM_Samples. The sample folder contains PLAXIS imports for the elements as described in the table below. 
+The repository separates source measurements, model inputs, FEM samples, and surrogate logs by workflow. Some outputs are produced by running the notebooks; availability depends on the checked-in data and the local PLAXIS setup. Keep generated files in the corresponding workflow folders and avoid overwriting source inputs.
